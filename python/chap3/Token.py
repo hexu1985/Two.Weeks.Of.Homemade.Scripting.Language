@@ -26,3 +26,6 @@ class Token:
         return ""
 
 Token.EOF = Token(-1)
+
+if __name__ == "__main__":
+    t = Token(13)

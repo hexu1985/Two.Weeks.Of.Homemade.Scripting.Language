@@ -12,7 +12,7 @@ class ParseException(Exception):
         if t == Token.EOF:
             return "the last line"
         else:
-            return "\"" + t.getText() + "\" at line " + t.getLineNumber()
+            return "\"" + t.getText() + "\" at line " + str(t.getLineNumber())
 
 if __name__ == '__main__':
     token = Token.EOF
